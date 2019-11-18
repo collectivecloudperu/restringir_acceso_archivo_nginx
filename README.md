@@ -3,10 +3,10 @@
 ### Directivas de Protección de Archivos (nginx.conf)
 
 ##### Bloqueo de archivo con retorno 404 Not Found
-location = /proyecto/img/logo.png {
+  location = /proyecto/img/logo.png {
 		deny all;
 	        return 404;
-}
+  }
 
 ##### Bloqueo de Archivo por Contraseña
 	    location ^~ /proyecto/img/logo.png {
