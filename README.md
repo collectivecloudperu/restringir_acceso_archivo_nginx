@@ -5,8 +5,8 @@
 ##### Bloqueo de archivo con retorno 404 Not Found
   location = /proyecto/img/logo.png {
 		deny all;
-	        return 404;
-  }
+	       return 404;
+	    }
 
 ##### Bloqueo de Archivo por Contraseña
 	    location ^~ /proyecto/img/logo.png {
