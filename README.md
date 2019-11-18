@@ -4,12 +4,12 @@
 
 		# Bloqueo de archivo con retorno 404 Not Found
 		location = /proyecto/img/logo.png {
-			 deny all;
-	     return 404;
-	  }
+		   deny all;
+	           return 404;
+	        }
 
-	  # Bloqueo de Archivo por Contraseña
-	  location ^~ /proyecto/img/logo.png {
+	        # Bloqueo de Archivo por Contraseña
+	        location ^~ /proyecto/img/logo.png {
 		   auth_basic_user_file .htpasswd;
 		   auth_basic "Restricted";
 		}
