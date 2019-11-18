@@ -1,6 +1,6 @@
 # Como Bloquear el Acceso a un Archivo de un Servidor Nginx (Casos de Uso)
 
-### Directivas de Protección de Archivos ###
+# Directivas de Protección de Archivos (nginx.conf)
 
 		# Bloqueo de archivo con retorno 404 Not Found
 		location = /proyecto/img/logo.png {
@@ -24,3 +24,6 @@
 		   allow 190.117.124.15;
 		   deny all;
 		} 
+		
+# Usuario y Password (.htpasswd)
+admin:123456
